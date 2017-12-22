@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2017 LasLabs Inc.
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+
+<odoo>
+
+    <menuitem id="menu_rancher_root"
+              parent="connector.menu_connector_root"
+              name="Rancher"
+              sequence="10"
+              groups="connector.group_connector_manager" />
+
+    <menuitem id="menu_rancher_backend"
+              parent="menu_rancher_root"
+              name="Backends"
+              sequence="10"
+              action="rancher_backend_action" />
+
+</odoo>

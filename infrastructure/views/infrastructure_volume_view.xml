@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2017 LasLabs Inc.
+     License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl). -->
+
+<odoo>
+
+    <record id="infrastructure_volume_view_form" model="ir.ui.view">
+        <field name="name">infrastructure.volume.view.form</field>
+        <field name="model">infrastructure.volume</field>
+        <field name="arch" type="xml">
+            <form string="Volumes">
+                <header>
+                    <field name="state" widget="statusbar" />
+                </header>
+                <sheet>
+                    <label for="name" class="oe_edit_only" />
+                    <h1>
+                        <field name="name" class="oe_inline" />
+                    </h1>
+                    <group colspan="6" name="group_meta">
+                        <field name="name" />
+                        <field name="external_name" />
+                        <field name="type" />
+                        <field name="access_mode" />
+                        <field name="environment_id" />
+                        <field name="host_id" />
+                        <field name="is_host_path" />
+                        <field name="capacity" />
+                        <field name="capacity_uom_id" />
+                    </group>
+                    <group name="group_mounts">
+                        <field name="mount_ids" />
+                    </group>
+                    <group name="group_driver">
+                        <field name="driver" />
+                        <field name="driver_option_ids" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="infrastructure_volume_view_tree" model="ir.ui.view">
+        <field name="name">infrastructure.volume.view.tree</field>
+        <field name="model">infrastructure.volume</field>
+        <field name="arch" type="xml">
+            <tree string="Volumes">
+                <field name="name" />
+                <field name="external_name" />
+                <field name="type" />
+                <field name="access_mode" />
+                <field name="state" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="infrastructure_volume_view_search" model="ir.ui.view">
+        <field name="name">infrastructure.volume.view.search</field>
+        <field name="model">infrastructure.volume</field>
+        <field name="arch" type="xml">
+            <search string="Volumes">
+
+                <field name="name" />
+                <field name="external_name" />
+                <field name="type" />
+                <field name="access_mode" />
+                <field name="environment_id" />
+                <field name="host_id" />
+                <field name="is_host_path" />
+                <field name="capacity" />
+                <field name="capacity_uom_id" />
+
+            </search>
+        </field>
+    </record>
+
+    <record id="infrastructure_volume_action" model="ir.actions.act_window">
+        <field name="name">Infrastructure Volumes</field>
+        <field name="res_model">infrastructure.volume</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>
