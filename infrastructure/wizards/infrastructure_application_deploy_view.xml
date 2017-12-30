@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2017 LasLabs Inc.
+     License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl). -->
+
+<odoo>
+
+    <record id="infrastructure_application_deploy_view_form" model="ir.ui.view">
+        <field name="name">infrastructure.application.deploy.view.form</field>
+        <field name="model">infrastructure.application.deploy</field>
+        <field name="arch" type="xml">
+            <form string="Deploy Application">
+                <sheet>
+                    <label for="name" class="oe_edit_only" />
+                    <h1>
+                        <field name="name" class="oe_inline" />
+                    </h1>
+                    <group name="group_deploy">
+                        <field name="application_id" />
+                        <field name="version_id"
+                               domain="[('application_id', '=', 'application_id')]"
+                               options="{'no_open': True, 'no_create': True, 'no_create_edit': True}"
+                               />
+                        <field name="environment_id"
+                               options="{'no_open': True, 'no_create': True, 'no_create_edit': True}"
+                               />
+                        <field name="description" />
+                        <field name="start_on_create" />
+                    </group>
+                    <notebook>
+                        <page name="page_options" string="Options">
+                            <field name="option_ids" mode="tree" readonly="0">
+                                <form string="Question">
+                                    <group>
+                                        <field name="display_name" />
+                                        <field name="description" />
+                                        <field name="value" />
+                                    </group>
+                                </form>
+                                <tree string="Questions" editable="bottom" create="0">
+                                    <field name="display_name" readonly="1" />
+                                    <field name="description" readonly="1" />
+                                    <field name="value" />
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <footer>
+                    <button name="action_deploy"
+                            type="object"
+                            string="Deploy"
+                            class="oe_highlight"
+                            />
+                    <button string="Cancel"
+                            special="cancel"
+                            class="btn-default"
+                            />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+
+    <act_window id="infrastructure_application_deploy_action"
+                name="Deploy Application"
+                src_model="infrastructure.application"
+                res_model="infrastructure.application.deploy"
+                key2="client_action_multi"
+                view_mode="form"
+                target="new"
+                />
+
+</odoo>

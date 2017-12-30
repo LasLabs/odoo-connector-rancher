@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2017 LasLabs Inc.
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+
+<odoo>
+
+    <record id="rancher_backend_form" model="ir.ui.view">
+        <field name="name">rancher.backend.form</field>
+        <field name="model">rancher.backend</field>
+        <field name="arch" type="xml">
+            <form string="Rancher Backend">
+
+                <header>
+                    <button name="action_sync_all"
+                            string="Sync All"
+                            type="object"
+                            />
+                </header>
+
+                <sheet>
+
+                    <label for="name" class="oe_edit_only" />
+                    <h1>
+                        <field name="name" class="oe_inline" />
+                    </h1>
+
+                    <group name="group_rancher"
+                           string="Rancher Configuration">
+                        <group colspan="6">
+                            <field name="host" />
+                            <field name="port" />
+                            <field name="is_ssl" />
+                            <field name="active" />
+                            <field name="access_key" />
+                            <field name="secret_path" />
+                            <field name="cache_minutes" />
+                            <field name="company_ids" widget="many2many_tags" />
+                        </group>
+                    </group>
+
+                </sheet>
+
+            </form>
+        </field>
+    </record>
+
+    <record id="rancher_backend_tree" model="ir.ui.view">
+        <field name="name">rancher.backend.tree</field>
+        <field name="model">rancher.backend</field>
+        <field name="arch" type="xml">
+            <tree string="Rancher Backends">
+                <field name="name" />
+                <field name="host" />
+                <field name="port" />
+                <field name="is_ssl" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="rancher_backend_action" model="ir.actions.act_window">
+        <field name="name">Rancher Backends</field>
+        <field name="res_model">rancher.backend</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

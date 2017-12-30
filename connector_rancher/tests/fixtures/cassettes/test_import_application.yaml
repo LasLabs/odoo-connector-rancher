@@ -1,0 +1,363 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: [application/json]
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://0.0.0.0:8080/v1-catalog
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAAI2PvQ6DMAyE9z7GzWkdNpQH6W6lbokaIGospArx7gT6gzoVebHs787nEew19F2G
+        GyeDcIHDUB09K8f+BoMYuvuyxHtUejSqyRHZ01qutrWlTURf0iD7RlreofmARSLx+p/nFAZ55CU5
+        /eRVaVNklR03N7R8rs8kRVJ8zy9fTIcZ7gz6mR0BAAA=
+    headers:
+      content-encoding: [gzip]
+      content-length: ['146']
+      content-type: [application/json]
+      date: ['Sat, 30 Dec 2017 01:43:54 GMT']
+      expires: ['Thu, 01 Jan 1970 00:00:00 GMT']
+      server: [Jetty(9.2.11.v20150529)]
+      set-cookie: [PL=rancher;Path=/]
+      vary: ['Accept-Encoding, User-Agent']
+      x-api-account-id: [1a1]
+      x-api-schemas: ['http://0.0.0.0:8080/v1-catalog/schemas']
+      x-api-user-id: [1a1]
+      x-rancher-version: [v1.6.12]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: [application/json]
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Cookie: [PL=rancher]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://0.0.0.0:8080/v1-catalog/schemas
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAAMWXS2/bMAyA7/sZOmdLdity24a1GNDtsAW9BDkwNuMIlSWXkoMGQf77ZMevOJLt
+        OO2GomjBl2jqIyUdWAgG2Hx5YBAYrqRm88NxwnjI5gwS/oSkrZRNmODyOVMyjWJjlVtjkvl0OvuU
+        /8zvZnez6e7zx8CGEyqa6mCLMehpI4YNm4iUQPyCGM/CaxufUKuUArznKMJ8oTohZvZJ5hFDstSG
+        uIxWrEiy0p3kmbjK1O11kl74HesUfqLZqiyHJXv4vmCrSWWbf5QN0qpWoITAXHDpmleycGzkVrsM
+        rqV1v672Vbrnda/Djah5nfeX4aZ1/H5LYSwTQ0yrUlemQAT7AYBwGYg0RFgLfGyxchGiB6ZmYR0r
+        lQXurdXlTnTbDfj4/8F5QeBY0Iu/15NerttGvRFwBOtrAhlsnRsbqDjmxqlCueOkZIzS/PDw5xY/
+        czlqoEkffR4CJiwl8W5kNFAn3NiAWQGPQ+AxGCcCDI6lp/S/Hp9q5TY/zZBjhuVpHQ8GVouRIo6d
+        bVxY7Z0hQtxAKsyiSLM4Tj3rFcblcew20QHxxPj0/WxvlAiRvAORB/mMRy+zvpGt/+y13Q13f8Aa
+        Rcc2CB6g1O71enorBi6N/UVyens/IwHjHhwlUV/Bk5C/aZOIIMR7Uu4q7E772j7RWh+0K29cXuRu
+        GQN5H7+kqM1Nl8YqQrsfS4W7HwvAR5EdkUoTz21hB4KH37Zwdi9p4efUxPDakFuSCuEjyuiMj1LF
+        pVPos1dJewBdjA/Cl5QTNrtqrZToJK3ne3dAPLs7vfERcnYG3PzuaAfyTfbbXiBre2Tb/zssNnbY
+        jXjC9E60nqn1yuM0/p1dX5C6Br6Fa6Bl3Xpt2krNqjnfPMfD6OlW6J+uGXLvASgSKRqP5cm9DWMu
+        /aeP4Bi1hsi9FdqASd2t/wZvitXY2jWfP4uzmNUajdvi8cNfJ/uZ4tsQAAA=
+    headers:
+      content-encoding: [gzip]
+      content-length: ['728']
+      content-type: [application/json]
+      date: ['Sat, 30 Dec 2017 01:43:54 GMT']
+      server: [Jetty(9.2.11.v20150529)]
+      vary: ['Accept-Encoding, User-Agent']
+      x-api-account-id: [1a1]
+      x-api-schemas: ['http://0.0.0.0:8080/v1-catalog/schemas']
+      x-api-user-id: [1a1]
+      x-rancher-version: [v1.6.12]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: [application/json]
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Cookie: [PL=rancher]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://0.0.0.0:8080/v1-catalog/templates/library:infra*ecr
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAAKVSTYvbMBC991cIHXoou7azp8VQShp2oVB6yPbj0PYwkcfOtLIkRorBLPnvHVnO
+        UmhvwSe9N/P85s08azCJvIu6fT7faAMJrB8+dLrVlg4MPOsFxcEzoVR919sQLAm0dP280R32cLLp
+        M47BSuFX5CjU3xItuZ7hDRpuN/qlYS2UsumuaqrCRMMUUoG3p+RH+Y8Ba2d1Cp2oR7X99qQedndq
+        510CcshqjwPFxLMyjB26RGCjIqf24MwRufrhRBrdROzdKPxibbD+AFaI3tsO+ROMKKhYFIiMd49k
+        0RXwEoqgt1JQxWnIRf8dMBPxaY4JR6HlZeGANqeryVe8OjLIiXrCLLFiWtKXWNFFXBvJ/S59Zknj
+        mFJo67qplq+9b+6betrcrubqtMYf6388vaMRBnwd2P9CI9O/3UAOO6Ltr9LNlkdZQVlDcb1G9rDb
+        q93LNtSXZXc5nADpWCovwu9hmXhRzfAc8vPCCnIKA0OHj+zXSKdyOB8vAU1yPFVz1Shtk3XLGV6l
+        s9Hn86s/7XzoLVUDAAA=
+    headers:
+      content-encoding: [gzip]
+      content-length: ['413']
+      content-type: [application/json]
+      date: ['Sat, 30 Dec 2017 01:43:54 GMT']
+      server: [Jetty(9.2.11.v20150529)]
+      vary: ['Accept-Encoding, User-Agent']
+      x-api-account-id: [1a1]
+      x-api-schemas: ['http://0.0.0.0:8080/v1-catalog/schemas']
+      x-api-user-id: [1a1]
+      x-rancher-version: [v1.6.12]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: [application/json]
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://0.0.0.0:8080/v1-catalog
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAAI2PvQ6DMAyE9z7GzWkdNpQH6W6lbokaIGospArx7gT6gzoVebHs787nEew19F2G
+        GyeDcIHDUB09K8f+BoMYuvuyxHtUejSqyRHZ01qutrWlTURf0iD7RlreofmARSLx+p/nFAZ55CU5
+        /eRVaVNklR03N7R8rs8kRVJ8zy9fTIcZ7gz6mR0BAAA=
+    headers:
+      content-encoding: [gzip]
+      content-length: ['146']
+      content-type: [application/json]
+      date: ['Sat, 30 Dec 2017 01:43:54 GMT']
+      expires: ['Thu, 01 Jan 1970 00:00:00 GMT']
+      server: [Jetty(9.2.11.v20150529)]
+      set-cookie: [PL=rancher;Path=/]
+      vary: ['Accept-Encoding, User-Agent']
+      x-api-account-id: [1a1]
+      x-api-schemas: ['http://0.0.0.0:8080/v1-catalog/schemas']
+      x-api-user-id: [1a1]
+      x-rancher-version: [v1.6.12]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: [application/json]
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Cookie: [PL=rancher]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://0.0.0.0:8080/v1-catalog/schemas
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAAMWXS2/bMAyA7/sZOmdLdity24a1GNDtsAW9BDkwNuMIlSWXkoMGQf77ZMevOJLt
+        OO2GomjBl2jqIyUdWAgG2Hx5YBAYrqRm88NxwnjI5gwS/oSkrZRNmODyOVMyjWJjlVtjkvl0OvuU
+        /8zvZnez6e7zx8CGEyqa6mCLMehpI4YNm4iUQPyCGM/CaxufUKuUArznKMJ8oTohZvZJ5hFDstSG
+        uIxWrEiy0p3kmbjK1O11kl74HesUfqLZqiyHJXv4vmCrSWWbf5QN0qpWoITAXHDpmleycGzkVrsM
+        rqV1v672Vbrnda/Djah5nfeX4aZ1/H5LYSwTQ0yrUlemQAT7AYBwGYg0RFgLfGyxchGiB6ZmYR0r
+        lQXurdXlTnTbDfj4/8F5QeBY0Iu/15NerttGvRFwBOtrAhlsnRsbqDjmxqlCueOkZIzS/PDw5xY/
+        czlqoEkffR4CJiwl8W5kNFAn3NiAWQGPQ+AxGCcCDI6lp/S/Hp9q5TY/zZBjhuVpHQ8GVouRIo6d
+        bVxY7Z0hQtxAKsyiSLM4Tj3rFcblcew20QHxxPj0/WxvlAiRvAORB/mMRy+zvpGt/+y13Q13f8Aa
+        Rcc2CB6g1O71enorBi6N/UVyens/IwHjHhwlUV/Bk5C/aZOIIMR7Uu4q7E772j7RWh+0K29cXuRu
+        GQN5H7+kqM1Nl8YqQrsfS4W7HwvAR5EdkUoTz21hB4KH37Zwdi9p4efUxPDakFuSCuEjyuiMj1LF
+        pVPos1dJewBdjA/Cl5QTNrtqrZToJK3ne3dAPLs7vfERcnYG3PzuaAfyTfbbXiBre2Tb/zssNnbY
+        jXjC9E60nqn1yuM0/p1dX5C6Br6Fa6Bl3Xpt2krNqjnfPMfD6OlW6J+uGXLvASgSKRqP5cm9DWMu
+        /aeP4Bi1hsi9FdqASd2t/wZvitXY2jWfP4uzmNUajdvi8cNfJ/uZ4tsQAAA=
+    headers:
+      content-encoding: [gzip]
+      content-length: ['728']
+      content-type: [application/json]
+      date: ['Sat, 30 Dec 2017 01:43:54 GMT']
+      server: [Jetty(9.2.11.v20150529)]
+      vary: ['Accept-Encoding, User-Agent']
+      x-api-account-id: [1a1]
+      x-api-schemas: ['http://0.0.0.0:8080/v1-catalog/schemas']
+      x-api-user-id: [1a1]
+      x-rancher-version: [v1.6.12]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: [application/json]
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Cookie: [PL=rancher]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://0.0.0.0:8080/v1-catalog/templates/library:infra*ecr:0
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      content-encoding: [gzip]
+      content-length: ['1928']
+      content-type: [application/json]
+      date: ['Sat, 30 Dec 2017 01:43:55 GMT']
+      server: [Jetty(9.2.11.v20150529)]
+      vary: ['Accept-Encoding, User-Agent']
+      x-api-account-id: [1a1]
+      x-api-schemas: ['http://0.0.0.0:8080/v1-catalog/schemas']
+      x-api-user-id: [1a1]
+      x-rancher-version: [v1.6.12]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: [application/json]
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://0.0.0.0:8080/v1-catalog
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAAI2PvQ6DMAyE9z7GzWkdNpQH6W6lbokaIGospArx7gT6gzoVebHs787nEew19F2G
+        GyeDcIHDUB09K8f+BoMYuvuyxHtUejSqyRHZ01qutrWlTURf0iD7RlreofmARSLx+p/nFAZ55CU5
+        /eRVaVNklR03N7R8rs8kRVJ8zy9fTIcZ7gz6mR0BAAA=
+    headers:
+      content-encoding: [gzip]
+      content-length: ['146']
+      content-type: [application/json]
+      date: ['Sat, 30 Dec 2017 01:43:55 GMT']
+      expires: ['Thu, 01 Jan 1970 00:00:00 GMT']
+      server: [Jetty(9.2.11.v20150529)]
+      set-cookie: [PL=rancher;Path=/]
+      vary: ['Accept-Encoding, User-Agent']
+      x-api-account-id: [1a1]
+      x-api-schemas: ['http://0.0.0.0:8080/v1-catalog/schemas']
+      x-api-user-id: [1a1]
+      x-rancher-version: [v1.6.12]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: [application/json]
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Cookie: [PL=rancher]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://0.0.0.0:8080/v1-catalog/schemas
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAAMWXS2/bMAyA7/sZOmdLdity24a1GNDtsAW9BDkwNuMIlSWXkoMGQf77ZMevOJLt
+        OO2GomjBl2jqIyUdWAgG2Hx5YBAYrqRm88NxwnjI5gwS/oSkrZRNmODyOVMyjWJjlVtjkvl0OvuU
+        /8zvZnez6e7zx8CGEyqa6mCLMehpI4YNm4iUQPyCGM/CaxufUKuUArznKMJ8oTohZvZJ5hFDstSG
+        uIxWrEiy0p3kmbjK1O11kl74HesUfqLZqiyHJXv4vmCrSWWbf5QN0qpWoITAXHDpmleycGzkVrsM
+        rqV1v672Vbrnda/Djah5nfeX4aZ1/H5LYSwTQ0yrUlemQAT7AYBwGYg0RFgLfGyxchGiB6ZmYR0r
+        lQXurdXlTnTbDfj4/8F5QeBY0Iu/15NerttGvRFwBOtrAhlsnRsbqDjmxqlCueOkZIzS/PDw5xY/
+        czlqoEkffR4CJiwl8W5kNFAn3NiAWQGPQ+AxGCcCDI6lp/S/Hp9q5TY/zZBjhuVpHQ8GVouRIo6d
+        bVxY7Z0hQtxAKsyiSLM4Tj3rFcblcew20QHxxPj0/WxvlAiRvAORB/mMRy+zvpGt/+y13Q13f8Aa
+        Rcc2CB6g1O71enorBi6N/UVyens/IwHjHhwlUV/Bk5C/aZOIIMR7Uu4q7E772j7RWh+0K29cXuRu
+        GQN5H7+kqM1Nl8YqQrsfS4W7HwvAR5EdkUoTz21hB4KH37Zwdi9p4efUxPDakFuSCuEjyuiMj1LF
+        pVPos1dJewBdjA/Cl5QTNrtqrZToJK3ne3dAPLs7vfERcnYG3PzuaAfyTfbbXiBre2Tb/zssNnbY
+        jXjC9E60nqn1yuM0/p1dX5C6Br6Fa6Bl3Xpt2krNqjnfPMfD6OlW6J+uGXLvASgSKRqP5cm9DWMu
+        /aeP4Bi1hsi9FdqASd2t/wZvitXY2jWfP4uzmNUajdvi8cNfJ/uZ4tsQAAA=
+    headers:
+      content-encoding: [gzip]
+      content-length: ['728']
+      content-type: [application/json]
+      date: ['Sat, 30 Dec 2017 01:43:55 GMT']
+      server: [Jetty(9.2.11.v20150529)]
+      vary: ['Accept-Encoding, User-Agent']
+      x-api-account-id: [1a1]
+      x-api-schemas: ['http://0.0.0.0:8080/v1-catalog/schemas']
+      x-api-user-id: [1a1]
+      x-rancher-version: [v1.6.12]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: [application/json]
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Cookie: [PL=rancher]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://0.0.0.0:8080/v1-catalog/templates/library:infra*ecr:1
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      content-encoding: [gzip]
+      content-type: [application/json]
+      date: ['Sat, 30 Dec 2017 01:43:55 GMT']
+      server: [Jetty(9.2.11.v20150529)]
+      vary: ['Accept-Encoding, User-Agent']
+      x-api-account-id: [1a1]
+      x-api-schemas: ['http://0.0.0.0:8080/v1-catalog/schemas']
+      x-api-user-id: [1a1]
+      x-rancher-version: [v1.6.12]
+    status: {code: 200, message: OK}
+version: 1

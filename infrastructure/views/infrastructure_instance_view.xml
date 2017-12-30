@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2017 LasLabs Inc.
+     License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl). -->
+
+<odoo>
+
+    <record id="infrastructure_instance_view_form" model="ir.ui.view">
+        <field name="name">infrastructure.instance.view.form</field>
+        <field name="model">infrastructure.instance</field>
+        <field name="arch" type="xml">
+            <form string="Instances">
+                <header>
+                    <field name="state" widget="statusbar" />
+                </header>
+                <sheet>
+                    <label for="name" class="oe_edit_only" />
+                    <h1>
+                        <field name="name" class="oe_inline" />
+                    </h1>
+                    <group name="group_meta">
+                        <field name="description" />
+                        <field name="stack_id" />
+                        <field name="service_id" />
+                        <field name="host_id" />
+                        <field name="image_uid" />
+                        <field name="company_ids" widget="many2many_tags" />
+                    </group>
+                    <notebook>
+                        <page name="page_storage" string="Storage">
+                            <group name="group_storage">
+                                <field name="mount_ids" />
+                            </group>
+                        </page>
+                        <page name="page_qos" string="QoS">
+                            <group name="group_limit_memory" string="Memory" colspan="6">
+                                <field name="memory_limit" />
+                                <field name="memory_reservation" />
+                                <field name="memory_swap" />
+                                <field name="memory_swappiness" />
+                                <field name="memory_uom_id" />
+                            </group>
+                            <group name="group_limit_cpu" string="CPU" colspan="6">
+                                <field name="cpu_limit" />
+                                <field name="cpu_pin" />
+                                <field name="cpu_shares" />
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="infrastructure_instance_view_tree" model="ir.ui.view">
+        <field name="name">infrastructure.instance.view.tree</field>
+        <field name="model">infrastructure.instance</field>
+        <field name="arch" type="xml">
+            <tree string="Instances">
+                <field name="name" />
+                <field name="image_uid" />
+                <field name="stack_id" />
+                <field name="service_id" />
+                <field name="host_id" />
+                <field name="state" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="infrastructure_instance_view_search" model="ir.ui.view">
+        <field name="name">infrastructure.instance.view.search</field>
+        <field name="model">infrastructure.instance</field>
+        <field name="arch" type="xml">
+            <search string="Instances">
+
+                <field name="name" />
+                <field name="description" />
+                <field name="image_uid" />
+                <field name="stack_id" />
+                <field name="service_id" />
+                <field name="host_id" />
+                <field name="state" />
+
+                <filter string="Image"
+                        domain=""
+                        context="{'group_by': 'image_uid'}"
+                        />
+                <filter string="State"
+                        domain=""
+                        context="{'group_by': 'state'}"
+                        />
+                <filter string="Stack"
+                        domain=""
+                        context="{'group_by': 'stack_id'}"
+                        />
+                <filter string="Host"
+                        domain=""
+                        context="{'group_by': 'host_id'}"
+                        />
+                <filter string="Service"
+                        domain=""
+                        context="{'group_by': 'service_id'}"
+                        />
+
+            </search>
+        </field>
+    </record>
+
+    <record id="infrastructure_instance_action" model="ir.actions.act_window">
+        <field name="name">Infrastructure Instances</field>
+        <field name="res_model">infrastructure.instance</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2017 LasLabs Inc.
+     License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl). -->
+
+<odoo>
+
+    <record id="ir_cron_update_rancher_instance" model="ir.cron">
+        <field name="name">Update Rancher Instances</field>
+        <field name="model">rancher.backend</field>
+        <field name="function">_cron_get_remote_records</field>
+        <field name="args">('rancher.instance', )</field>
+        <field name="interval_number">10</field>
+        <field name="interval_type">minutes</field>
+        <field name="numbercall">-1</field>
+    </record>
+
+    <record id="ir_cron_update_rancher_application" model="ir.cron">
+        <field name="name">Update Rancher Applications</field>
+        <field name="model">rancher.backend</field>
+        <field name="function">_cron_get_remote_records</field>
+        <field name="args">('rancher.application', )</field>
+        <field name="interval_number">120</field>
+        <field name="interval_type">minutes</field>
+        <field name="numbercall">-1</field>
+    </record>
+
+</odoo>

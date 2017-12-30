@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2017 LasLabs Inc.
+     License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl). -->
+
+<odoo>
+
+    <menuitem id="menu_infrastructure"
+              name="Infrastructure"
+              sequence="90"
+              web_icon="infrastructure,static/description/icon.png"
+              load_xmlid="True"
+              />
+
+    <menuitem id="menu_infrastucture_environment"
+              name="Environments"
+              parent="menu_infrastructure"
+              sequence="10"
+              action="infrastructure_environment_action"
+              />
+
+    <menuitem id="menu_infrastucture_application"
+          name="Applications"
+          parent="menu_infrastructure"
+          sequence="20"
+          action="infrastructure_application_action"
+          />
+    
+    <menuitem id="menu_infrastucture_host"
+              name="Hosts"
+              parent="menu_infrastructure"
+              sequence="30"
+              action="infrastructure_host_action"
+              />
+
+    <menuitem id="menu_infrastructure_stack"
+              name="Stacks"
+              parent="menu_infrastructure"
+              sequence="40"
+              action="infrastructure_stack_action"
+              />
+
+    <menuitem id="menu_infrastucture_service"
+              name="Services"
+              parent="menu_infrastructure"
+              sequence="50"
+              action="infrastructure_service_action"
+              />
+
+    <menuitem id="menu_infrastucture_instance"
+              name="Instances"
+              parent="menu_infrastructure"
+              sequence="100"
+              action="infrastructure_instance_action"
+              />
+
+</odoo>

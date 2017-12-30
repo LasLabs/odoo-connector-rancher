@@ -16,4 +16,3 @@ exclude_lines =
 
     # Don't complain about null context checking
     if context is None:
-
