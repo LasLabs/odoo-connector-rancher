@@ -88,6 +88,10 @@ Known Issues
 * Due to above dumbness, data imports aren't happening as often as they should.
 * Selection options should be represented in application deployer, instead of plain
   text.
+* Once `OCA/product-attribute#309 <https://github.com/OCA/product-attribute/pull/309>`_
+  is merged, ``product_uom_technology`` should be removed from this repo.
+* Once `OCA/server-tools#1098 <https://github.com/OCA/server-tools/pull/1098>`_
+  is merged, ``infrastructure`` should be removed from this repo.
 
 Road Map
 ========
