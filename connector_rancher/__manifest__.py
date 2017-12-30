@@ -6,7 +6,7 @@
 {
     "name": "Rancher Connector",
     "summary": "Two way synchronization with Rancher",
-    "version": "10.0.1.0.0",
+    "version": "10.0.0.1.0",
     "category": "Connector",
     "website": "https://github.com/LasLabs/odoo-connector-rancher.git",
     "author": "LasLabs",
